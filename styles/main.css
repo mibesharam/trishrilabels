@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700");
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  border-bottom: 0.1rem solid #563d71;
+}
+
+#slider .carousel-inner img {
+  width: 100%;
+  height: 70vh;
+}
+
+#slider .carousel-caption {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 47%;
+}
+
+#slider .carousel-caption h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-shadow: .8rem .8rem .8rem black;
+}
+
+#slider .carousel-caption .btn {
+  font-weight: 500;
+  border-width: medium;
+}
+
+.ico {
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+.fa-file-invoice {
+  color: #5E3F89;
+}
+
+.fa-phone {
+  color: #e34f26;
+}
+
+.fa-css3 {
+  color: #0086b7;
+}
+
+.social a {
+  font-size: 5rem;
+  padding: 5rem;
+  text-decoration: none;
+  color: #563d71;
+}
+
+footer {
+  background-color: #727272;
+  color: white;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+footer .col-md-4 h5 {
+  font-size: 2rem;
+}
+
+/*---Media Queries --*/
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  margin: 0 !important;
+}
+
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#fixed {
+  background-image: url("../images/purple.jpg");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+.jumbotron {
+  padding: 1rem;
+}
+/*# sourceMappingURL=main.css.map */
